@@ -58,10 +58,6 @@ def getSignatureKey(key, date_stamp, regionName, serviceName):
     kSigning = sign(kService, 'aws4_request')
     return kSigning
 
-# aws_access_key_id = AKIAJM7XU7KUGXORJN4Q
-# aws_secret_access_key = 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
- 
-
 # Read AWS access key from env. variables or configuration file. Best practice is NOT
 # to embed credentials in code.
 access_key = os.environ.get('AWS_ACCESS_KEY_ID')
